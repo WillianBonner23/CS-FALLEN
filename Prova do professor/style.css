@@ -1,7 +1,7 @@
 
 body {
-    background-color: black;
-    color:white;
+    background-color: #111416;
+    color: #e3f6e3;
 }
 
 * {
@@ -21,10 +21,30 @@ h2 {
     text-align: center;
 }
 
+.item button{
+
+    background-color: none;
+    display: inline-block;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 5%;
+}
+
+.item button:hover {
+
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .item img {
 
+    display: block;
     width: 500px;
     height: 250px;
+    max-width: 100%;
+    border-radius: 5%;
 }
 
 .item p {
@@ -33,7 +53,7 @@ h2 {
     font-size: 35;
 }
 
-.mapas {
+.maps {
 
     margin-top: 10px;
     display: flex;
@@ -51,7 +71,8 @@ h2 {
     height: max-content;
     overflow-y: scroll; /* Enables vertical scrolling */
     padding: 10px;
-    background-color: #919191;
+    background-color: #484e4b;
+    border-radius: 2%;
 }
 
 /* Optional: Custom scrollbar styling */
@@ -60,10 +81,25 @@ h2 {
 }
 
 .scroll-box::-webkit-scrollbar-thumb {
-    background: #333333;
-    border-radius: 4px;
+    background: #54a454;
+    border-radius: 2px;
 }
 
 .scroll-box::-webkit-scrollbar-thumb:hover {
-    background: #313131;
+    background: #e3f6e3;
+}
+
+.video p 
+{
+    text-align: center;
+    vertical-align: bottom;
+    margin-bottom: 1px;
+}
+.video iframe {
+
+    margin-top: 25px;
+    border: solid 2px white;
+    border-radius: 2%;
+    width: 640px;
+    height: 480px;
 }
